@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offers | Bean Boutique</title>
+  <meta name="description" content="Explore current Bean Boutique offers and coffee subscription plans.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('beanboutique-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Bean Boutique home">
+        <svg class="nav__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M8 16h20a4 4 0 0 1 4 4c0 5-3 8-7 9H12c-4-1-7-4-7-9a4 4 0 0 1 3-4z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M28 18h3a4 4 0 0 1 0 8h-2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M13 6c-2 2-2 4 0 6M20 6c-2 2-2 4 0 6M27 6c-2 2-2 4 0 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span>Bean Boutique</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html" aria-current="page">Offers</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8"/></g></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="coffee.html">Coffee</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="events.html">Events</a>
+      <a href="offers.html" aria-current="page">Offers</a>
+      <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+    </div>
+  </header>
+  <main id="main">
+<section class="page-intro"><div class="page-intro__inner"><p class="eyebrow eyebrow--center">A little something extra</p><h1>Special Offers</h1><p>Good coffee is even better with a thoughtful deal. Explore current promotions and flexible subscription plans from Bean Boutique.</p></div></section>
+<section class="section"><div class="section__inner"><div class="offer-grid"><article class="offer-card fade-in"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80" alt="Latte in a ceramic cup" loading="lazy"><div class="offer-card__body"><p class="eyebrow">New Customer Special</p><h2>10% off your first order</h2><p>Use code WELCOME10 at checkout. Available to first-time customers; cannot be combined with other offers.</p><p class="product-meta">Offer code: <strong>WELCOME10</strong></p></div></article><article class="offer-card fade-in"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80" alt="Freshly roasted coffee beans" loading="lazy"><div class="offer-card__body"><p class="eyebrow">Buy 2, Get 1 Free</p><h2>A little extra in every brew</h2><p>Choose any three eligible coffee bags and the lowest-priced bag is free. Mix and match your favourites.</p><p class="product-meta">Offer code: <strong>BREW3</strong></p></div></article><article class="offer-card fade-in"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80" alt="Cold brew coffee in a glass" loading="lazy"><div class="offer-card__body"><p class="eyebrow">Free Shipping</p><h2>Delivery on us</h2><p>Enjoy free shipping on coffee and equipment orders over $50. The offer is applied automatically at checkout.</p><p class="product-meta">Offer code: <strong>SHIPFREE</strong></p></div></article><article class="offer-card fade-in"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80" alt="Coffee brewing equipment on a counter" loading="lazy"><div class="offer-card__body"><p class="eyebrow">Equipment Bundle</p><h2>Save 15% on selected bundles</h2><p>Pair a brewer with the right accessories and save on a home coffee setup. Ask in store for bundle availability.</p><p class="product-meta">Offer code: <strong>GEAR15</strong></p></div></article></div></div></section>
+<section class="section section--alt"><div class="section__inner"><p class="eyebrow eyebrow--center">Your coffee, on repeat</p><h2 class="section__title">Coffee Subscription Plans</h2><p style="text-align:center;max-width:680px;margin:0 auto 1rem">Choose a plan that suits your routine. Subscription buttons are a front-end demo and do not start a paid subscription.</p>
+<div class="subscription-grid">
+<article class="subscription-card"><p class="eyebrow">Basic</p><h3>Everyday Ritual</h3><p class="subscription-price">$19.99 <small>/ month</small></p><ul><li>1 bag of coffee each month</li><li>Choose your favourite blend</li><li>Free shipping</li><li>Cancel anytime</li></ul><button class="btn btn--outline subscribe-btn" data-plan="Basic">Choose Basic</button></article>
+<article class="subscription-card subscription-card--popular"><p class="eyebrow">Most popular</p><h3>Premium</h3><p class="subscription-price">$34.99 <small>/ month</small></p><ul><li>2 bags of coffee each month</li><li>Mix and match coffees</li><li>10% equipment discount</li><li>Early access to new releases</li><li>Cancel anytime</li></ul><button class="btn btn--primary subscribe-btn" data-plan="Premium">Choose Premium</button></article>
+<article class="subscription-card"><p class="eyebrow">For explorers</p><h3>Deluxe</h3><p class="subscription-price">$49.99 <small>/ month</small></p><ul><li>3 bags of coffee each month</li><li>Limited-edition coffees</li><li>15% equipment discount</li><li>Monthly tasting notes</li><li>Priority customer support</li></ul><button class="btn btn--outline subscribe-btn" data-plan="Deluxe">Choose Deluxe</button></article>
+</div><p class="form-status" id="subscriptionStatus" aria-live="polite"></p></div></section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__brand nav__brand--footer">
+          <svg class="nav__mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 16h20a4 4 0 0 1 4 4c0 5-3 8-7 9H12c-4-1-7-4-7-9a4 4 0 0 1 3-4z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M28 18h3a4 4 0 0 1 0 8h-2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M13 6c-2 2-2 4 0 6M20 6c-2 2-2 4 0 6M27 6c-2 2-2 4 0 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span>Bean Boutique</span>
+        </a>
+        <p>Specialty coffee, considered equipment, and memorable café experiences.</p>
+      </div>
+      <div class="footer__links">
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div class="footer__newsletter">
+        <h3>Get roast notes</h3>
+        <p>Subscribe for seasonal menu updates and café news.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input id="nf-email" name="email" type="email" placeholder="Email address" aria-label="Email address">
+          <button class="btn btn--secondary btn--sm" type="submit">Sign up</button>
+        </form>
+        <p class="form-status" id="newsletterStatus" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Bean Boutique. Crafted with care.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

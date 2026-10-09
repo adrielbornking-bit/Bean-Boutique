@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique | Artisan Café</title>
+  <meta name="description" content="Visit Bean Boutique for small-batch coffee, loose-leaf tea, and house-made pastries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('beanboutique-theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Bean Boutique home">
+        <svg class="nav__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M8 16h20a4 4 0 0 1 4 4c0 5-3 8-7 9H12c-4-1-7-4-7-9a4 4 0 0 1 3-4z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M28 18h3a4 4 0 0 1 0 8h-2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+          <path d="M13 6c-2 2-2 4 0 6M20 6c-2 2-2 4 0 6M27 6c-2 2-2 4 0 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span>Bean Boutique</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8"/></g></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="coffee.html">Coffee</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="events.html">Events</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__copy fade-in">
+          <p class="eyebrow">Small-batch · Portland, OR</p>
+          <h1>Separate pages, same cozy café experience.</h1>
+          <p class="hero__lede">Explore our coffee, tea, pastries, story, and visit us through dedicated pages designed for quick browsing.</p>
+          <div class="hero__ctas">
+            <a href="coffee.html" class="btn btn--primary">Explore Coffee</a>
+            <a href="equipment.html" class="btn btn--secondary">Explore Equipment</a>
+          </div>
+        </div>
+        <div class="hero__art fade-in">
+          <div class="hero__frame">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80" alt="Latte with rosetta art in a ceramic cup" width="700" height="820">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <p class="eyebrow eyebrow--center">Our spaces</p>
+        <h2 class="section__title">Choose your next stop</h2>
+        <div class="grid grid--3">
+          <article class="card feature-card fade-in slide-up">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&q=80" alt="Cold brew coffee served over ice" loading="lazy" width="700" height="500">
+            </div>
+            <div class="card__body">
+              <h3><a href="coffee.html">Coffee</a></h3>
+              <p>Slow-steeped cold brew, velvety lattes, and espresso pulled to order.</p>
+            </div>
+          </article>
+          <article class="card feature-card fade-in slide-up">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=700&q=80" alt="Coffee brewing equipment arranged on a counter" loading="lazy" width="700" height="500">
+            </div>
+            <div class="card__body">
+              <h3><a href="equipment.html">Equipment</a></h3>
+              <p>Thoughtful brewing tools to help you make a better cup at home.</p>
+            </div>
+          </article>
+          <article class="card feature-card fade-in slide-up">
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=700&q=80" alt="Friends gathered around a café table" loading="lazy" width="700" height="500">
+            </div>
+            <div class="card__body">
+              <h3><a href="events.html">Events</a></h3>
+              <p>Join tasting sessions, brewing workshops, and special café gatherings.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="section__inner about__grid">
+        <div class="about__copy fade-in">
+          <p class="eyebrow">About Bean Boutique</p>
+          <h2 class="section__title section__title--left">A small café with a big point of view.</h2>
+          <p>We roast in small batches, brew thoughtfully, and shape our menu around seasonality and craft. Every cup begins with intention.</p>
+          <p><a href="offers.html" class="btn btn--outline">Explore Offers</a></p>
+        </div>
+        <div class="about__art fade-in">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&q=80" alt="Barista roasting coffee beans" loading="lazy" width="700" height="820">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__brand nav__brand--footer">
+          <svg class="nav__mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 16h20a4 4 0 0 1 4 4c0 5-3 8-7 9H12c-4-1-7-4-7-9a4 4 0 0 1 3-4z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M28 18h3a4 4 0 0 1 0 8h-2" fill="none" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M13 6c-2 2-2 4 0 6M20 6c-2 2-2 4 0 6M27 6c-2 2-2 4 0 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span>Bean Boutique</span>
+        </a>
+        <p>Specialty coffee, considered equipment, and memorable café experiences.</p>
+      </div>
+      <div class="footer__links">
+        <a href="coffee.html">Coffee</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="events.html">Events</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div class="footer__newsletter">
+        <h3>Get roast notes</h3>
+        <p>Subscribe for seasonal menu updates and café news.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input id="nf-email" name="email" type="email" placeholder="Email address" aria-label="Email address">
+          <button class="btn btn--secondary btn--sm" type="submit">Sign up</button>
+        </form>
+        <p class="form-status" id="newsletterStatus" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Bean Boutique. Crafted with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
